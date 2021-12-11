@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .quiz{
+            display: grid;
+            grid-template-columns: 3fr 2fr 1fr;
+            column-gap: 60px;
+            margin-bottom: 20px;
+        }
+        .block{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>퀴즈</h1>
+    <div class="quiz quiz-1">
+        <p>
+        1. html에서 무엇을 하면 버튼을 만들수있나요?    
+        </p>
+        <input class="input-1" placeholder="정답을 입력하세요">
+        <button class="button-1">제출</button>
+    </div>
+    <div class="quiz quiz-2 block">
+        <p>
+           2. js에서 경고창 뜨게 하는 법은?
+        </p>
+        <input class="input-2" placeholder="정답을 입력하세요">
+        <button class="button-2">제출</button>
+    </div>
+    <script>
+        let $button1 = document.querySelector(".button-1")
+        let $input1 = document.querySelector(".input-1")
+        let $button2 = document.querySelector(".button-2")
+        let $input2 = document.querySelector(".input-2")
+        let $quiz2 = document.querySelector(".quiz-2")
+        $button1.addEventListener("click", ()=> {         
+            const answer = $input1.value
+            if (answer==="<button>"){
+                alert("정답입니다.")
+                $quiz2.classList.remove("block")
+            }
+            else{
+                alert("틀렸습니다")
+            }
+        })
+        $button2.addEventListener("click", ()=> {         
+            const answer = $input2.value
+            if (answer==="alert"){
+                alert("정답입니다.")
+            }
+            else{
+                alert("틀렸습니다")
+            }
+        })
+    </script>
+</body>
+</html>
