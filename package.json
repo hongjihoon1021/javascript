@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "자바스크립트 공부\r 화이팅!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongjihoon1021/javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hongjihoon1021/javascript/issues"
+  },
+  "homepage": "https://github.com/hongjihoon1021/javascript#readme",
+  "dependencies": {
+    "prettier": "^2.5.1"
+  }
+}
