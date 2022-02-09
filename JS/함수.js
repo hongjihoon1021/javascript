@@ -1,6 +1,6 @@
-function multi(a,b){
-    console.log(a*b)
-    return a*b
+function plus(a,b,c){
+    return a+b+c
 }
-let result=multi(2,3)
-console.log("함수결과",result)
+
+let sum= plus(1,2,3)
+console.log(sum)
